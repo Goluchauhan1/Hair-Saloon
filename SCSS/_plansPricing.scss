@@ -1,0 +1,55 @@
+.plansPricing{
+    h2::after{
+       @include after(160px,15px,0,$primaryColor);
+    }
+    .nav-pills{
+        a:hover{
+            background-color: $primaryColor !important;
+            color: $color--white !important;
+        }
+        .active{
+            background-color: $primaryColor !important;
+            color: $color--white !important;
+        }
+    }
+    h5{
+        font-size: calc(5.5px + 1vw);
+    }
+    .dotted{
+        transform: translateY(-5.5px);
+        flex: 50;
+        border-bottom: 3px dotted $primaryColor;
+        @media (max-width: 992px){
+            border-bottom: 2px dotted $primaryColor;
+            transform: translateY(-3px);
+        }
+        @media (max-width: 576px){
+            border-bottom: 1.5px dotted $primaryColor;
+            transform: translateY(-2px);
+        }
+    }
+    .nxt{
+        @media (max-width: 576px){
+            padding-top: 16px;
+        }
+    }
+    .nav{
+        font-size: calc(6px + 1vw);
+        gap: calc(1px + 1vw);
+    }
+    .btn{
+        @include button($color--white,$primaryColor);
+        &:hover{
+            @include button-hover();
+        }
+        &:active{
+            @include button-active();
+        }     
+    }
+    @media screen and (max-width: 576px){
+        div{
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}

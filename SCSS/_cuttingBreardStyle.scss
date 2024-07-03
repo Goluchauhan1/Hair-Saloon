@@ -1,0 +1,23 @@
+.cutting-style{
+    .cutting-outline{
+        outline: 3px solid $primaryColor;
+        outline-offset: -20px;
+    }
+    h3{
+        @include letter-word-spacing(5px, 2px);
+        color: $secondaryColor;
+    }
+    .btn{
+        &:hover{
+            @include button-hover();
+        }
+        &:active{
+            @include button-active();
+        }
+    }
+    @media screen and (max-width: 968px) {
+        .sizer, .sizer-img{
+            padding: 0 !important;
+        }
+    }
+}

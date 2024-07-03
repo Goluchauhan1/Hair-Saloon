@@ -1,0 +1,46 @@
+
+.meet-team-head{
+    h2:after{
+        @include after(170px,15px, 30px, $color--white);
+    }
+    .meet-team{
+        height: 480px;
+        width: 21rem;
+        .round-img-card {
+            height: 150px;
+            width: 150px;
+            object-position: top;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: border-color 0.4s ease-in-out;
+          }
+        &:hover .round-img-card{
+            border-color: $primaryColor !important;
+        }
+    }
+    .owl-item.active, .owl-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .owl-dots {   
+        .owl-dot {
+            margin-top: 18px !important;
+            span {
+                outline: 2px solid $color--white;
+                outline-offset: 4px;
+                transform: scale(0.8);
+                transition: 0.6s all;
+            }
+            &.active span {
+                background: $color--red;
+                outline: 2px solid $color--red;
+            }
+            span:hover {
+                background: $color--red;
+                outline: 2px solid $color--red;
+            }
+        }
+    }
+}

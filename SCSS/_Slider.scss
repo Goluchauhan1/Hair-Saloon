@@ -1,0 +1,58 @@
+.slider{
+    h2{
+        font-size: calc(32px + 2vw);
+    }
+    h5{
+        @include letter-word-spacing (3 + px, -3 + px);
+        font-size: calc(12px + 2vw);
+        &::after{
+            @include after(180px, 40px, 40px, $color--white);
+        }
+    }
+}
+#Slider {
+    .owl-item.active, .owl-item {
+        display: flex;
+        justify-content: center;
+    }
+    .owl-nav .owl-next, .owl-nav .owl-prev {
+        position: absolute;
+        @include sliderStyles (calc(6px + 2vw) !important, 1px !important, 8px !important, 0 !important, 8px !important, 0 !important, 41%);
+        z-index: 1;
+    }
+    .owl-nav {
+        .owl-next{
+            right: 5%;
+        }
+        .owl-prev {
+            left: 5%;
+        }
+        button{
+            background: rgba($color: $secondaryColor, $alpha: 0.6) !important;
+            border-radius: 5px;
+            backdrop-filter: blur(5px);
+        }
+        &{
+            margin: 0;
+        }
+    }
+    .owl-dots {   
+        .owl-dot {
+            margin-top: 18px !important;
+            span {
+                outline: 2px solid $color--white;
+                outline-offset: 4px;
+                transform: scale(0.8);
+                transition: 0.6s all;
+            }
+            &.active span {
+                background: $color--red;
+                outline: 2px solid $color--red;
+            }
+            span:hover {
+                background: $color--red;
+                outline: 2px solid $color--red;
+            }
+        }
+    }
+}

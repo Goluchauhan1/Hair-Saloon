@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="Owl carousel/CSS/owl.carousel.min.css">
+  <link rel="stylesheet" href="Owl carousel/CSS/owl.theme.default.min.css">
+  <!-- AOS cdn link -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- fevicone icone links -->
+  <link rel="apple-touch-icon" sizes="180x180" href="images/Favi-cones/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/Favi-cones/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/Favi-cones/favicon-16x16.png">
+  <!-- bootstrap-5 cdn links -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <title>Hair Saloon</title>
+  <!-- custom css -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <!-- google fonts and fontAwesome cdn links -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+  <section class="main">
+    <div class="overlay">
+    <!-- //========================================= Header and Navbar =========================================// -->
+    <header>
+      <div class="container text-white">
+        <nav class="navbar navbar-expand-lg navbar-dark position-relative py-2" data-aos="fade-down">
+          <img src="Images/Logo and icone/Main-logo.png" class="navbar-brand" alt="">
+          <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">pages</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">about us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">service</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">shop</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">team</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">plans</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">contact</a>
+              </li>
+            </ul>
+          </div>
+          <div class="search z-3 px-3 d-flex position-relative justify-content-center align-items-center ms-auto">
+            <i class="fas fa-search position-absolute searchBtn"></i>
+            <i class="fa-solid fa-xmark closeBtn"></i>
+          </div>
+          <form class="position-absolute w-75 end-0 searchBox" action="" role="search">
+            <input class="form-control me-2 text-white rounded-pill" name="search" type="search"
+              placeholder="Search here . . ." aria-label="Search">
+          </form>
+          <button class="phoneToggler text-white bg-transparent border-0 pe-3"><i
+              class="fa fa-phone-volume"></i></button>
+          <button class="navbar-toggler navToggler px-1" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div
+          class="collapse navbar-collapse position-absolute d-lg-none w-100 border-top border-white border-2 py-2 start-0 z-3"
+          id="menu">
+          <ul class="navbar-nav text-center text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">pages</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">about us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">plans</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- //======================Slider======================// -->
+    <div class="container py-5 text-white">
+      <div class="owl-carousel owl-theme pb-5 mb-4" id="Slider">
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <div class="text-center slider d-flex align-items-center flex-column">
+            <h2>
+              We offer the best shaves
+            </h2>
+            <h5 class="white-line m-0 mb-4 small-caps d-flex flex-column align-items-center">
+              you want it we cut it for you
+            </h5>
+          </div>
+          <a href="#" class="btn px-4 fs-5 btn-light text-center small-caps fw-semibold rounded-0 m-0">make an appointment</a>
+        </div>
+        <div class="d-flex justify-content-center align-items-center flex-column">
+          <div class="text-center slider d-flex align-items-center flex-column">
+            <h2>
+              We offer the best shaves
+            </h2>
+            <h5 class="m-0 small-caps mb-4 white-line d-flex flex-column align-items-center">
+              you want it we cut it for you
+            </h5>
+          </div>
+          <a href="#" class="btn px-4 fs-5 btn-light text-center small-caps fw-semibold rounded-0 m-0">make an appointment</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </section>
+  <!-- //======================Barber======================// -->
+  <section>
+    <div class="container py-5 Barber">
+      <div class="row m-0 d-flex align-items-center text-white" data-aos="fade-up">
+        <div class="col-md-4 quickView">
+          <div class="position-relative beards-section">
+            <img src="Images/pictures/mens_beard_1.png" class="img-fluid" alt="mens-beard-1.png">
+            <div class="position-absolute w-100 text-center small-caps mens z-3">
+              <h2 class="fw-normal">
+                men beards
+              </h2>
+            </div>
+            <div
+              class="position-absolute w-100 h-100 text-center small-caps quick d-flex justify-content-center align-items-center">
+              <a href="#" class="text-black fs-3 fw-semibold">quick view</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 beards-pad quickView">
+          <div class="position-relative beards-section">
+            <img src="Images/pictures/mens_beard_2.png" class="img-fluid" alt="mens-beard-2.png">
+            <div class="position-absolute w-100 text-center small-caps mens z-3">
+              <h2 class="fw-normal">
+                hair cuts
+              </h2>
+            </div>
+            <div
+              class="position-absolute w-100 h-100 text-center small-caps quick d-flex justify-content-center align-items-center">
+              <a href="#" class="text-black fs-3 fw-semibold">quick view</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 quickView">
+          <div class="position-relative beards-section">
+            <img src="Images/pictures/mens_beard_3.png" class="img-fluid" alt="mens-beard-3.png">
+            <div class="position-absolute w-100 text-center small-caps mens z-3">
+              <h2 class="fw-normal">
+                moustache trim
+              </h2>
+            </div>
+            <div
+              class="position-absolute w-100 h-100 text-center small-caps quick d-flex justify-content-center align-items-center">
+              <a href="#" class="text-black fs-3 fw-semibold">quick view</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row m-0 pt-5 barberShop" data-aos="zoom-in">
+        <div class="col-lg-7">
+          <h2 class="fw-semibold mb-4 text-black">
+            Welcome to gentlan's barbershop
+          </h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque aperiam earum quasi facilis quam ducimus, est
+            eveniet ratione odio fugiat impedit exercitationem ex iusto hic assumenda doloremque commodi repellendus.
+            Consequuntur dignissimos molestias adipisci dicta magni maiores laudantium odit voluptatibus. Qui iste,
+            nihil odio modi fugiat odit repellendus nam, sit nulla nisi dolorem perspiciatis harum reiciendis accusamus.
+            Explicabo tenetur possimus nostrum maxime rerum placeat quia odit?
+          </p>
+          <div class="row m-0">
+            <div class="col-lg-6 info p-0 pe-4">
+              <div class="oneInfo d-flex flex-column">
+                <div class="d-flex align-items-center text-black text-uppercase gap-3">
+                  <h3 class="fw-bolder">
+                    01
+                  </h3>
+                  <h6 class="fw-normal">
+                    cutting techniques
+                  </h6>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, elitpsu adipisicing. Ipsam, explicabo necessitatibusex libero
+                excepturi, dolores adipisci, veniam eumer asperiores doloribus sequi itaque repellat mini quas
+                voluptates voluptatum!
+              </p>
+            </div>
+            <div class="col-lg-6 info p-0 ps-3">
+              <div class="oneInfo d-flex flex-column">
+                <div class="d-flex align-items-center text-black text-uppercase gap-3">
+                  <h3 class="fw-bolder">
+                    02
+                  </h3>
+                  <h6 class="fw-normal">
+                    care for your hair
+                  </h6>
+                </div>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, elitpsu adipisicing. Ipsam, explicabo necessitatibusex libero
+                excepturi, dolores adipisci, veniam eumer asperiores doloribus sequi itaque repellat mini quas
+                voluptates voluptatum ipsumse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <form>
+            <fieldset class="border border-2 rounded-3 border-black">
+              <legend class="float-none w-auto m-auto px-2"><img src="/Images/Logo and icone/fieldset-logo.png" alt="beard"></legend>
+              <input type="text" name="fullName"
+                class="form-control ps-4 border-0 rounded-0 form-control-lg shadow-none mb-4" placeholder="Full Name">
+              <input type="tel" name="phoneNumber"
+                class="form-control ps-4 border-0 rounded-0 form-control-lg shadow-none mb-4"
+                placeholder="Contact / Phone number">
+              <input type="text" name="time"
+                class="form-control ps-4 border-0 rounded-0 form-control-lg shadow-none mb-4"
+                placeholder="Time Arrangement">
+              <button type="submit" class="btn px-4 fs-6 text-white rounded-0 text-uppercase w-100">quick
+                appointment</button>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //========================================= Cutting beards with Styles =========================================// -->
+  <section class="bg-black text-white" data-aos="zoom-in-up">
+    <div class="container py-5">
+      <div class="row cutting-style m-0">
+        <div class="col-lg-10 mx-auto col-xl-6 px-4 sizer-img">
+          <img src="Images/pictures/cutting_beard_style_main.png" class="img-fluid cutting-outline" alt="cutting-beard style-main.png">
+        </div>
+        <div
+          class="col-lg-10 mt-5 mx-auto col-xl-6 sizer d-flex align-items-center justify-content-center flex-column px-4 text-center">
+          <img src="Images/Logo and icone/cutting-beard style-logo.png" class="mb-4" alt="sizer">
+          <h4 class="text-capitalize m-0">
+            cutting beards with styles
+          </h4>
+          <h3 class="small-caps fw-normal mb-4">
+            for looking men only
+          </h3>
+          <p class="m-0">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad rem architecto pariatur velit dicta quidem.
+            Ipsum deleniti, doloremque voluptate ratione excepturi reprehenderit est quisquam fugiat ad neque quam
+            accusantium cupiditate necessitatibus unde iure repudiandae inventore itaque! Cum et minus vero!
+          </p>
+          <a href="#" class="btn btn-light rounded-0 mt-5 border-0">check your services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //========================================= Our Services =========================================// -->
+  <section data-aos="zoom-in-up">
+    <div class="container py-5 ourServices text-center">
+      <div class="d-flex justify-content-center align-items-center flex-column">
+        <h2 class="text-black">
+          Our Services
+        </h2>
+        <p class="m-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ad consectetur temporibus sunt?
+        </p>
+      </div>
+      <div class="row m-0">
+        <div class="col-md-4 pt-5 d-flex align-items-center justify-content-center flex-column">
+          <img src="Images/Logo and icone/Our-service-logo-1.png" class="img-fluid mb-4" alt="Our-service-logo-1.png">
+          <h5 class="text-uppercase">
+            lorem ipsum dolor sit amet
+          </h5>
+          <p class="m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab veritatis expedita impedit ullam
+            provident!
+          </p>
+        </div>
+        <div class="col-md-4 pt-5 d-flex align-items-center justify-content-center flex-column">
+          <img src="Images/Logo and icone/Our-service-logo-2.png" class="img-fluid mb-4" alt="Our-service-logo-2.png">
+          <h5 class="text-uppercase">
+            lorem ipsum dolor sit amet
+          </h5>
+          <p class="text-muted m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab veritatis expedita impedit ullam
+            provident!
+          </p>
+        </div>
+        <div class="col-md-4 pt-5 d-flex align-items-center justify-content-center flex-column">
+          <img src="Images/Logo and icone/Our-service-logo-3.png" class="img-fluid mb-4" alt="Our-service-logo-3.png">
+          <h5 class="text-uppercase">
+            lorem ipsum dolor sit amet
+          </h5>
+          <p class="text-muted m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab veritatis expedita impedit ullam
+            provident!
+          </p>
+        </div>
+        <div class="col-md-4 pt-5 d-flex align-items-center justify-content-center flex-column">
+          <img src="Images/Logo and icone/Our-service-logo-4.png" class="img-fluid mb-4" alt="Our-service-logo-4.png">
+          <h5 class="text-uppercase">
+            lorem ipsum dolor sit amet
+          </h5>
+          <p class="text-muted m-0"">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab veritatis expedita impedit ullam provident!
+          </p>
+        </div>
+        <div class=" col-md-4 pt-5 d-flex align-items-center justify-content-center flex-column">
+            <img src="Images/Logo and icone/Our-service-logo-5.png" class="img-fluid mb-4" alt="Our-service-logo-5.png">
+          <h5 class="text-uppercase">
+            lorem ipsum dolor sit amet
+          </h5>
+          <p class="text-muted m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab veritatis expedita impedit ullam
+            provident!
+          </p>
+        </div>
+        <div class="col-md-4 pt-5 d-flex align-items-center justify-content-center flex-column">
+          <img src="Images/Logo and icone/Our-service-logo-6.png" class="img-fluid mb-4" alt="Our-service-logo-6.png">
+          <h5 class="text-uppercase">
+            lorem ipsum dolor sit amet
+          </h5>
+          <p class="text-muted m-0">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab veritatis expedita impedit ullam
+            provident!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- // ======================================== discount and view More ========================================// -->
+  <section>
+    <div class="discount" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="container text-center text-white py-5">
+        <div class=" d-flex justify-content-center align-items-center flex-column">
+          <h3 class="fw-light">
+            Appointent a Haircut Today and Be Sure You
+          </h3>
+          <h2 class="fs-1 fw-bolder mb-4">
+            Get 30% Discount
+          </h2>
+          <a href="#" class="btn btn-light px-5 fs-5 rounded-0 mt-5 btn-sm text-uppercase"> appointment</a>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5 view-imgs" data-aos="zoom-in">
+      <div class="row m-0">
+        <div class="col-md-6">
+          <div class="position-relative">
+            <img src="Images/pictures/discount_view_1.png" class="img-fluid" alt="discount-view-1.png">
+            <div
+              class="position-absolute top-0 view-imgHover d-flex justify-content-center align-items-center w-100 h-100">
+              <a href="#" class="fw-semibold fs-4 text-decoration-none">VIEW MORE</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row m-0">
+            <div class="col-md-6 p-0 view">
+              <div class="position-relative">
+                <img src="Images/pictures/discount_view_2.png" class="img-fluid view-img-one" alt="discount-view-2.png">
+                <div
+                  class="position-absolute top-0 view-imgHover d-flex justify-content-center align-items-center w-100 h-100">
+                  <a href="#" class="fw-semibold fs-4 text-decoration-none">VIEW MORE</a>
+                </div>
+              </div>
+              <div class="position-relative">
+                <img src="Images/pictures/discount_view_3.png" class="img-fluid view-img-two" alt="discount-view-3.png">
+                <div
+                  class="position-absolute top-0 view-imgHover d-flex justify-content-center align-items-center w-100 h-100">
+                  <a href="#" class="fw-semibold fs-4 text-decoration-none">VIEW MORE</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 p-0 view-more position-relative">
+              <img src="Images/pictures/discount_view_4.png" class="img-fluid h-100" alt="discount-view-4.png">
+              <div
+                class="position-absolute top-0 view-imgHover d-flex justify-content-center align-items-center w-100 h-100">
+                <a href="#" class="fw-semibold fs-4 text-decoration-none">VIEW MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //========================================= Meat Team =========================================// -->
+  <section class="bg-black text-white" data-aos="zoom-in">
+    <div class="container meet-team-head py-5">
+      <div class="d-flex justify-content-center flex-column align-items-center pb-5">
+        <h2 class="text-center m-0 d-flex align-items-center flex-column">
+          Meet the Team
+        </h2>
+        <p class="m-0">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, et! Cupiditate ipsam necessitatibus enim.
+        </p>
+      </div>
+      <div class="owl-carousel owl-theme" id="meetTeam">
+        <div class="card meet-team position-relative rounded-0 border-0">
+          <img src="Images/pictures/Card_1.png" class=" h-100" alt="Card-1.png">
+          <div class="card-body text-center pt-5 mt-5">
+            <img src="Images/pictures/Card_11.png"
+              class="round-img-card rounded-circle object-fit-cover border border-5 position-absolute border-white"
+              alt="Card-1(1).png">
+            <h4 class="card-title mt-3">Justine Henderson</h4>
+            <p class="card-text fw-semibold">Trimming</p>
+            <a href="#" class="btn btn-outline-dark border-2 rounded-0 my-2 px-5 fw-semibold">BOOK NOW</a>
+          </div>
+        </div>
+        <div class="card meet-team position-relative rounded-0 border-0">
+          <img src="Images/pictures/Card_2.png" class="h-100" alt="Card-2.png">
+          <div class="card-body text-center pt-5 mt-5">
+            <img src="Images/pictures/Card_22.png"
+              class="round-img-card rounded-circle object-fit-cover border border-5 position-absolute border-white"
+              alt="Card-2(1).png">
+            <h4 class="card-title mt-3">Justine Henderson</h4>
+            <p class="card-text fw-semibold">Hair style</p>
+            <a href="#" class="btn btn-outline-dark border-2 rounded-0 my-2 px-5 fw-semibold">BOOK NOW</a>
+          </div>
+        </div>
+        <div class="card meet-team position-relative rounded-0 border-0">
+          <img src="Images/pictures/Card_3.png" class="h-100" alt="Card-3.png">
+          <div class="card-body text-center pt-5 mt-5">
+            <img src="Images/pictures/Card_33.png"
+              class="round-img-card rounded-circle object-fit-cover border border-5 position-absolute border-white"
+              alt="Card-3(1).png">
+            <h4 class="card-title mt-3">Justine Henderson</h4>
+            <p class="card-text fw-semibold">Shaving</p>
+            <a href="#" class="btn btn-outline-dark border-2 rounded-0 my-2 px-5 fw-semibold">BOOK NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- //========================================= Plans & Pricing =========================================// -->
+  <section data-aos="zoom-in">
+    <div class="container plansPricing text-center py-5">
+      <div class="d-flex justify-content-center flex-column align-items-center">
+        <h2 class=" text-black d-flex align-items-center flex-column fw-bolder">
+          Plans & Pricings
+        </h2>
+        <span></span>
+      </div>
+      <nav class="py-5">
+        <ul class="nav nav-pills d-flex justify-content-center fw-semibold" role="tablist">
+          <li class="nav-item">
+            <button class="nav-link text-uppercase active text-black rounded-0 p-0 px-2" id="pills-all-tab" data-bs-toggle="pill" data-bs-target="#pills-all" type="button" role="tab" aria-controls="pills-all" aria-selected="true">all</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link text-uppercase text-black rounded-0 p-0 px-2" id="pills-beards-tab" data-bs-toggle="pill" data-bs-target="#pills-beards" type="button" role="tab" aria-controls="pills-beards" aria-selected="false">beards</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link text-uppercase text-black rounded-0 p-0 px-2" id="pills-hairstyle-tab" data-bs-toggle="pill" data-bs-target="#pills-hairstyle" type="button" role="tab" aria-controls="pills-hairstyle" aria-selected="false">hairstyle</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link text-uppercase text-black rounded-0 p-0 px-2" id="pills-haircut-tab" data-bs-toggle="pill" data-bs-target="#pills-haircut" type="button" role="tab" aria-controls="pills-haircut" aria-selected="false">haircut</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link text-uppercase text-black rounded-0 p-0 px-2" id="pills-mustaches-tab" data-bs-toggle="pill" data-bs-target="#pills-mustaches" type="button" role="tab" aria-controls="pills-mustaches" aria-selected="false">mustaches</button>
+          </li>
+        </ul>
+      </nav>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab" tabindex="0">
+          <div class="row m-0">
+            <div class="col-md-6">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Shampoo + Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+              
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Long Layered Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $28.00
+                </h5>
+              </div>
+              <div class="d-flex py-3">
+                <h5 class="text-black m-0 pe-1">
+                  Regular Haircut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Fade + Hot Towel
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $19.00
+                </h5>
+              </div>
+              <div class="d-flex py-3">
+                <h5 class="text-black m-0 pe-1">
+                  Children's Haircut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $22.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Shaving Normal
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $15.00
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6 text-black nxt">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Shape-up
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $35.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Sinior Citizen Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $28.00
+                </h5>
+              </div>
+              <div class="d-flex py-3">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Hot Towel
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Bread Trim With Razor
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $37.00
+                </h5>
+              </div>
+              <div class="d-flex py-3">
+                <h5 class="text-black m-0 pe-1">
+                  Color
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $45.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Styling
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $18.00
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-beards" role="tabpanel" aria-labelledby="pills-beards-tab" tabindex="0">
+          <div class="row m-0">
+            <div class="col-md-6">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Shaving Normal
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $15.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Shape-up
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $35.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Hot Towel
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6 text-black nxt">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Bread Trim With Razor
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $37.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Styling
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $18.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Styling
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $18.00
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-hairstyle" role="tabpanel" aria-labelledby="pills-hairstyle-tab" tabindex="0">
+          <div class="row m-0">
+            <div class="col-md-6">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Long Layered Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $28.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Fade + Hot Towel
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $19.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Children's Haircut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $22.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Shape-up
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $35.00
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6 text-black nxt">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Shape-up
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $28.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Color
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $45.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Styling
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $18.00
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-haircut" role="tabpanel" aria-labelledby="pills-haircut-tab" tabindex="0">
+          <div class="row m-0">
+            <div class="col-md-6">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Shampoo + Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Long Layered Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $28.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Regular Haircut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Children's Haircut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $22.00
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6 text-black nxt">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Shape-up
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $35.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Sinior Citizen Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $28.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Hot Towel 
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-mustaches" role="tabpanel" aria-labelledby="pills-mustaches-tab" tabindex="0">
+          <div class="row m-0">
+            <div class="col-md-6">
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Shampoo + Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+              <div class="d-flex pb-3">
+                <h5 class="text-black m-0 pe-1">
+                  Long Layered Cut
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $28.00
+                </h5>
+              </div>
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Fade + Hot Towel
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $19.00
+                </h5>
+              </div>
+            </div>
+            <div class="col-md-6 text-black nxt">
+              <div class="d-flex">
+                <h5 class="text-black m-0 pe-1">
+                  Crew Cut + Hot Towel
+                </h5>
+                <span class="dotted"></span>
+                <h5 class="text-black m-0 ps-1">
+                  $25.00
+                </h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn px-5 rounded-0 mt-5">ALL PRICE</a>
+    </div>
+  </section>
+  <!-- //========================================= Footer & About =========================================// -->
+  <footer>
+    <section class="bg-black text-white">
+      <div class="container about py-5" data-aos="zoom-in">
+        <div class="row">
+          <div class="col-md-4">
+            <address class="m-0">
+              <img src="Images/Logo and icone/Main-logo.png" class="img-fluid" alt="">
+              <h6 class="my-4">
+                71 Pilgrim Aenue, Chevy Chase, MD 20815
+              </h6>
+              <h6 class="m-0">
+                Phone : (125) 546-4478
+              </h6>
+              <h6 class="mt-4 m-0">
+                E-Mail : fangorn@hotmail.com
+              </h6>
+              <div class="gap-3 d-flex mt-5 fs-2 m-0">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-square-google-plus"></i>
+                <i class="fa-brands fa-square-pinterest"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+              </div>
+            </address>
+          </div>
+          <div class="col-md-3 time-table">
+            <h4 class="mb-5">
+              WORKING HOURS
+            </h4>
+            <h5 class="mb-3">
+              Monday - Friday
+            </h5>
+            <p class="mb-3">
+              Mon. 8.00 AM - 4.00 PM
+            </p>
+            <p class="mb-3">
+              Tue. 8.00 AM - 4.00 PM
+            </p>
+            <p class="mb-3">
+              Wed. 8.00 AM - 4.00 PM
+            </p>
+            <p class="mb-3">
+              Thu. 8.00 AM - 4.00 PM
+            </p>
+            <p class="m-0">
+              Fri. 8.00 AM - 4.00 PM
+            </p>
+          </div>
+          <div class="col-md-5">
+            <h4 class="mb-5 blog">
+              RECENT BLOGS POSTS
+            </h4>
+            <div class="card rounded-0 border-0 bg-transparent text-white">
+              <div class="row m-0">
+                <div class="col-4 ps-0">
+                  <img src="Images/pictures/footer_card1.png" alt="footer-card1.png">
+                </div>
+                <div class="col-8 p-0">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorum nisi illo.
+                  </p>
+                  <h6>
+                    JAN. 15, 2020 by Marcus
+                    </h56>
+                </div>
+              </div>
+            </div>
+            <div class="card rounded-0 mt-4 text-white border-0 bg-transparent">
+              <div class="row m-0">
+                <div class="col-4 ps-0">
+                  <img src="Images/pictures/footer_card2.png" alt="footer-card2.png">
+                </div>
+                <div class="col-8 p-0">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores dolorum nisi illo.
+                  </p>
+                  <h6>
+                    JAN. 15, 2020 by Marcus
+                  </h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container fw-bolder txt-footer">
+      Copyright &copy; Toshal Infotech 2020, All Right reserved.
+    </div>
+  </footer>
+  <!-- bootstrap-5 cdn library -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- js owl carousel and library jquery library -->
+  <script src="JavaScript/jquery.min.js"></script>
+  <script src="Owl carousel/JavaScript/owl.carousel.min.js"></script>
+  <!-- AOS cdn library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- custom script -->
+  <script src="JavaScript/script.js"></script>
+</body>
+</html>

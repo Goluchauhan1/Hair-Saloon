@@ -1,0 +1,85 @@
+.main{
+    background: url('../Images/pictures/Header_bg.png') no-repeat center;
+    background-size: cover;
+    .overlay{
+        background-color: rgba($color: $primaryColor, $alpha: 0.35);
+        header{
+            background: rgba($color: $primaryColor, $alpha: 0.79);
+            .navbar-brand{
+                width: 75px;
+            }
+            .navbar-toggler-icon{
+                font-size: 15px !important;
+            }
+            #menu {
+                background: rgba($color: $secondaryColor, $alpha: 0.712);
+                backdrop-filter: blur(5px);
+            }
+            .navbar{
+                .nav-link{
+                    padding: 5px 15px !important ;
+                }
+                .nav-item{
+                    .active{
+                        background-color: $color--white !important;
+                        color: $primaryColor !important;
+                    }
+                } 
+                a{
+                    &:hover{
+                        color: $primaryColor !important;
+                        background-color: $color--white;
+                    } 
+                }
+            }
+            .search{
+                cursor: pointer;
+                transition: transform 0.6s cubic-bezier(0.9, 0, 0.3, 0.9);
+            }
+            .searchBox{
+                opacity: 0;
+                visibility: hidden;
+                transition: right 2s;
+                transition: opacity 0.6s cubic-bezier(0.9, 0, 0.3, 0.9);
+                &.active{
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+            .hide, .none, .hnone{
+                display: none;
+            }
+            input{
+                height: 45px;
+                margin: 0 !important;
+                background: $secondaryColor !important;
+                backdrop-filter: 5px;
+                border: none !important;
+            }
+            ::placeholder{
+                color: rgba($color: $color--white, $alpha: 0.9) !important;
+            }
+            .searchBtn, .closeBtn{
+                transition: opacity 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
+            }
+            .search:hover .closeBtn{
+                filter: drop-shadow(1px 2px 1px $primaryColor);
+            }
+            .closeBtn{
+                opacity: 0;
+                visibility: hidden;
+            }
+            .searchBtn.active{
+                opacity: 0;
+                rotate: (90deg);
+            }
+            .closeBtn.active{
+                opacity: 1;
+                rotate: (90deg);
+                visibility: visible;
+                transition: 0.5s;
+                scale: 1;
+            }
+        }
+    }
+}

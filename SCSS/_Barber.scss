@@ -1,0 +1,85 @@
+.Barber{
+    margin-top: -120px !important;
+    h2{
+        font-size: calc(18px + 2vw);
+    }
+}
+.beards-section{
+    .mens{
+        h2{
+            font-size: calc(10px + 2vw);
+        }
+        bottom: 0;
+        background: rgba($color: $primaryColor, $alpha: 0.79);
+        @include letter-word-spacing(3px, 0px);
+    }
+    .quick{
+        transition: .8s ease-in-out;
+        background-color: rgba($color: $color--white, $alpha: 0.3);
+        opacity: 0;
+        top: 0%;
+            a {
+                transform: translateY(-10px);
+                text-decoration: none;
+            }
+    }
+    &:hover .quick{
+        opacity: 1;
+    }
+}
+.oneInfo::after{
+    content: "";
+    height: 2.5px;
+    width: 100%;
+    margin-bottom: 16px;
+    background: $primaryColor;
+}
+fieldset {
+    padding: 35px;
+    .form-control{
+        background: rgba($color: $secondaryColor, $alpha: 0.4) !important;
+        &::placeholder{
+            color:rgba($color: $primaryColor, $alpha: 0.8) !important;;
+        }
+    }
+    .btn{
+        @include button($color--white,$primaryColor);
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+        &:hover{
+            @include button-hover();
+        }
+        &:active{
+            @include button-active();
+        }
+    }
+}
+@media screen and (max-width: 576px){
+    .Barber{
+        .quickView{
+            padding: 0 !important;
+        }
+        .beards-pad{
+            padding-top: 24px !important;
+            padding-bottom: 24px !important;
+        }
+        form fieldset {
+            padding: 10px;
+        }
+    }
+}
+@media screen and (max-width: 968px){   
+    .Barber{
+        margin-top: 0 !important;
+        .info, .barberShop > div{
+            padding: 0 !important;
+        }
+        form fieldset {
+            padding: 24px;
+            .btn{
+                padding-top: 8px !important;
+                padding-bottom: 8px !important;
+            }
+        }
+    }
+}

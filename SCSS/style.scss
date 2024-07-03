@@ -1,0 +1,17 @@
+@import"variables";
+@import"mixin";
+@import"base";
+@import"header";
+@import"Slider";
+@import"Barber";
+@import"cuttingBreardStyle";
+@import"ourServices";
+@import"discount";
+@import"meetTeam";
+@import"plansPricing";
+@import"about&footer";
+
+// ======================globle-classes======================//
+.small-caps{
+    @include small-caps(small-caps);
+}

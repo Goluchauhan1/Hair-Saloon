@@ -1,0 +1,38 @@
+@mixin small-caps($style){
+    font-variant: #{$style};
+}
+@mixin letter-word-spacing ($value, $numbers){
+    letter-spacing: #{$value};
+    word-spacing: #{$numbers};
+}
+@mixin sliderStyles ($value, $top, $left, $bottom, $right, $numbers, $values){
+    font-size: #{$value};
+    padding-top: #{$top};
+    padding-left: #{$left};
+    padding-bottom: #{$bottom};
+    padding-right: #{$right};
+    margin: #{$numbers};
+    top: #{$values};
+}
+@mixin button($color,$bgColor){
+    border: none !important;
+    color: $color !important;
+    background-color: $bgColor !important;
+    transition: color 0.5s ease-in-out;
+}
+@mixin button-hover(){
+     box-shadow: 0 4px 3px $secondaryColor;
+}
+@mixin button-active(){
+    box-shadow: 0 2px 3px $secondaryColor;
+    transform: translateY(4px);
+}
+@mixin after($value,$top,$bottom,$bgColor){
+    content: "";
+    height: 2.5px;
+    width: $value;
+    margin-top: $top !important;
+    margin-bottom: $bottom !important;
+    background: $bgColor;
+    margin-top: 8px;
+}

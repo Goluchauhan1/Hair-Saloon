@@ -1,0 +1,39 @@
+.about{
+    .card{
+        img{
+            width: 100% !important;
+            height: calc(11px + 13vh);
+            object-fit: cover;
+        }
+    }
+    h4{
+        font-size: calc(11px + 1vw);
+    }
+    h5{
+        font-size: calc(6px + 1vw);
+    }
+    h6, p{
+        font-size: calc(2px + 1vw);
+    }
+    @media screen and (max-width: 576px){
+        .time-table{
+            margin-top: 40px;
+            margin-bottom: 40px;
+            h4{
+                margin-bottom: 25px !important;
+            }
+        }
+        .blog{
+            margin-bottom: 25px !important;
+        }
+        address div{
+            margin-top: 25px !important;
+        }
+    }
+}
+.txt-footer{
+    font-family: "Maven Pro", sans-serif !important;
+        font-size: calc(5px + 1vw);
+        padding-top: calc(4px + 1vw);
+        padding-bottom: calc(4px + 1vw);
+}
