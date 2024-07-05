@@ -8,29 +8,27 @@
             .navbar-brand{
                 width: 75px;
             }
-            .navbar-toggler-icon{
-                font-size: 15px !important;
+            button .navbar-toggler-icon{
+                font-size: 15px;
             }
             #menu {
                 background: rgba($color: $secondaryColor, $alpha: 0.712);
                 backdrop-filter: blur(5px);
             }
             .navbar{
-                .nav-link{
-                    padding: 5px 15px !important ;
-                }
                 .nav-item{
+                    .nav-link{
+                        padding: 5px 15px;
+                        &:hover{
+                            color: $primaryColor;
+                            background-color: $color--white;
+                        }
+                    }
                     .active{
-                        background-color: $color--white !important;
-                        color: $primaryColor !important;
+                        background-color: $color--white;
+                        color: $primaryColor;
                     }
                 } 
-                a{
-                    &:hover{
-                        color: $primaryColor !important;
-                        background-color: $color--white;
-                    } 
-                }
             }
             .search{
                 cursor: pointer;
@@ -49,15 +47,17 @@
             .hide, .none, .hnone{
                 display: none;
             }
-            input{
-                height: 45px;
-                margin: 0 !important;
-                background: $secondaryColor !important;
-                backdrop-filter: 5px;
-                border: none !important;
-            }
-            ::placeholder{
-                color: rgba($color: $color--white, $alpha: 0.9) !important;
+            .searchBox {
+                .form-control{
+                    height: 45px;
+                    margin: 0;
+                    background: $secondaryColor;
+                    backdrop-filter: 5px;
+                    border: none;
+                }
+                ::placeholder{
+                    color: rgba($color: $color--white, $alpha: 0.9);
+                }
             }
             .searchBtn, .closeBtn{
                 transition: opacity 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);

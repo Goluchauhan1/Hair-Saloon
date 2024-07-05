@@ -15,23 +15,23 @@
 .main .overlay header .navbar-brand {
   width: 75px;
 }
-.main .overlay header .navbar-toggler-icon {
-  font-size: 15px !important;
+.main .overlay header button .navbar-toggler-icon {
+  font-size: 15px;
 }
 .main .overlay header #menu {
   background: rgba(128, 128, 128, 0.712);
   backdrop-filter: blur(5px);
 }
-.main .overlay header .navbar .nav-link {
-  padding: 5px 15px !important;
+.main .overlay header .navbar .nav-item .nav-link {
+  padding: 5px 15px;
+}
+.main .overlay header .navbar .nav-item .nav-link:hover {
+  color: #000;
+  background-color: #fff;
 }
 .main .overlay header .navbar .nav-item .active {
-  background-color: #fff !important;
-  color: #000 !important;
-}
-.main .overlay header .navbar a:hover {
-  color: #000 !important;
   background-color: #fff;
+  color: #000;
 }
 .main .overlay header .search {
   cursor: pointer;
@@ -50,15 +50,15 @@
 .main .overlay header .hide, .main .overlay header .none, .main .overlay header .hnone {
   display: none;
 }
-.main .overlay header input {
+.main .overlay header .searchBox .form-control {
   height: 45px;
-  margin: 0 !important;
-  background: grey !important;
+  margin: 0;
+  background: grey;
   backdrop-filter: 5px;
-  border: none !important;
+  border: none;
 }
-.main .overlay header ::placeholder {
-  color: rgba(255, 255, 255, 0.9) !important;
+.main .overlay header .searchBox ::placeholder {
+  color: rgba(255, 255, 255, 0.9);
 }
 .main .overlay header .searchBtn, .main .overlay header .closeBtn {
   transition: opacity 0.5s cubic-bezier(0.9, 0, 0.3, 0.9);
