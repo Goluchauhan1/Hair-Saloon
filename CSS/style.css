@@ -131,7 +131,7 @@
 }
 #Slider .owl-dots {
   position: absolute;
-  bottom: 100px;
+  bottom: 52px;
   left: 50%;
   transform: translate(-50%);
 }
@@ -153,6 +153,14 @@
   outline: 2px solid rgb(238, 118, 27);
 }
 
+@media (max-width: 768px) {
+  #Slider .sliderM {
+    margin: 0 !important;
+  }
+  #Slider .owl-dots {
+    bottom: 32px;
+  }
+}
 .Barber h2 {
   font-size: calc(18px + 2vw);
 }
