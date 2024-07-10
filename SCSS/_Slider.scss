@@ -1,4 +1,5 @@
 .slider{
+   
     h2{
         font-size: calc(32px + 2vw);
     }
@@ -12,8 +13,8 @@
 }
 #Slider {
     .owl-item.active, .owl-item {
-        display: flex;
-        justify-content: center;
+        background: url('../Images/pictures/Header_bg.png') no-repeat center;
+        background-size: cover;
     }
     .owl-nav .owl-next, .owl-nav .owl-prev {
         position: absolute;
@@ -36,7 +37,11 @@
             margin: 0;
         }
     }
-    .owl-dots {   
+    .owl-dots {  
+        position: absolute;
+        bottom: 100px; 
+        left: 50%;
+        transform: translate(-50%);
         .owl-dot {
             margin-top: 18px !important;
             span {

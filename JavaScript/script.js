@@ -39,7 +39,7 @@ $(document).ready(function () {
         responsiveClass: true,
         responsive: {
             600: {
-                dots: false,
+                dots: true,
                 nav: true,
             }
         }
