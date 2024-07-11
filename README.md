@@ -12,4 +12,5 @@ Click on the link to open Hair-Saloon-webpage:- https://goluchauhan1.github.io/H
 
 Make this theme Using:-#HTML #CSS #BOOTSTRAP #SASS #JAVASCRIPT
 
-![Man Hair Salons Theme](https://github.com/Goluchauhan1/Dance-Academy/assets/169231998/fb1e4488-d00f-4031-a966-0dc637519858)
+![hairSloon](https://github.com/Goluchauhan1/Hair-Saloon/assets/169231998/497d1255-2eea-4dff-bac0-fde7fc3accf3)
+
